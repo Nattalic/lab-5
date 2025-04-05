@@ -43,10 +43,12 @@ console.log("Frutas cortas (≤ 4 letras):", frutasCortas)
 // punto 7
 function eliminarFruta(fruta) {
     for (let i = 0; i < frutas.length; i++) {
+
         if (frutas[i] === fruta) {
-            frutas.splice(i, 1   ) // elimina la fruta en la posición i
-            return true
+        frutas.splice(i, 1   ) // elimina la fruta en la posición i
+        return true
         }
+        
     }
     return false // si no encontró la fruta
 }
